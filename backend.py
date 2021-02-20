@@ -86,6 +86,8 @@ def send_store_id():
     for i,(key, val) in enumerate(re.items()):
         if key != "floor" and val.isnumeric():
             filt[key] = int(val)
+        elif key == "store_name":
+            filt["name"] = val.lower()
         else:
             filt[key] = val
     data = myCollection.find(filt)
