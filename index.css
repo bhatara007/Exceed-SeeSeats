@@ -1,0 +1,535 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@font-face {
+    font-family: Ozonex;
+    src: url("DB Ozone X Li.ttf");
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Ozonex;
+    scroll-behavior: smooth;
+}
+
+.type {
+    color: #FFF;
+    margin-top: 0;
+}
+
+.bg {
+    background-image: url("assets/banner.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* banner */
+
+#banner {
+    vertical-align: middle;
+    text-align: center;
+    color: aliceblue;
+}
+
+.inner h2 {
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inner a {
+    margin: 0;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inner a:link {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.inner a:visited {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+/*new card*/
+
+.card a:link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.card a:visited {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.card {
+    display: inline-block;
+    margin-left: 3.3%;
+	margin-right: 3.3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: mediumseagreen;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+.sec2 {
+    height: 980px;
+    margin: 0;
+    font-family: Ozonex;
+}
+
+
+/* button */
+
+.btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+
+/*btn_background*/
+
+.effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: #000;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+.effect04:hover span {
+    -webkit-transform: translateY(-400%) scale(-0.1, 20);
+    transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.effect04::before {
+    content: attr(data-sm-link-text);
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1, 20);
+    transform: translateY(500%) scale(-0.1, 20);
+}
+
+.effect04:hover::before {
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1, 1);
+    transform: translateY(0) scale(1, 1);
+}
+
+
+/*HEADER*/
+
+.header {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header h2 {
+    color: black;
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    top: 48%;
+    left: 50.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header h3 {
+    color: black;
+    /* font-size: 80px; */
+    /* margin: 0; */
+    position: block;
+}
+
+.header a {
+    color: black;
+    font-size: 17px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.header a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: white;
+    background: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the search box inside the navigation bar */
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 6px;
+    font-size: 17px;
+    margin-right: 6px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    border-bottom: #FFF;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+div.floor {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 30px 30px 30px 30px;
+    background: rgba(196, 196, 196, 0.29);
+}
+
+h1.floor {
+    margin-top: 60px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+
+@media screen and (max-width: 600px) {
+    .topnav a,
+    .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+	
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+i {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav-rest {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+button.tablinks {
+    background-color: #f1f1f1;
+    color: black;
+    border-bottom: 3px solid transparent;
+}
+
+button.tablinks:hover {
+    border-bottom: 3px solid red;
+}
+
+button.tablinks.active {
+    border-bottom: 3px solid red;
+}
+
+.tabcontent {
+    padding: 0px 12px;
+    height: 300px;
+    display: none;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width:1200px) {
+    .sec2 {
+        height: 900px;
+        margin: 0;
+        font-family: Ozonex;
+    }
+    .flip-card {
+        display: inline-block;
+        padding-top: 100px;
+        padding-left: 6.67%;
+        background-color: transparent;
+        width: 40%;
+        height: 300px;
+        perspective: 1000px;
+    }
+	
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}
+
+@media screen and (max-width:850px){
+	.inner h2{
+		font-size: 60px;
+	}
+	
+	.header h2{
+		font-size: 70px;
+	}
+	
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}
+
+@media screen and (max-width:750px) {
+    .sec2 {
+        height: 1450px;
+        margin: 0;
+        font-family: Ozonex;
+    }
+    .flip-card {
+        display: inline-block;
+        padding-top: 50px;
+        padding-left: 10%;
+        background-color: transparent;
+        width: 80%;
+        height: 300px;
+        perspective: 1000px;
+    }
+	
+	.header h2{
+		font-size: 60px;
+	}
+	
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}
+
+@media screen and (max-width:620px) {
+	.inner h2{
+		font-size: 50px;
+	}
+	
+	.header h2{
+		font-size: 50px;
+	}
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}
+
+@media screen and (max-width:500px) {
+    .inner h2 {
+        font-size: 45px;
+    }
+	
+	.header h2{
+		font-size: 45px;
+	}
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}
+
+@media screen and (max-width:460px) {
+    .inner h2 {
+        font-size: 35px;
+    }
+	
+	.header h2{
+		font-size: 35px;
+	}
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}
+
+@media screen and (max-width:370px) {
+    .inner h2 {
+        font-size: 30px;
+    }
+	.logo {
+    	width: 200px;
+    	height: 200px;
+	}
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>See seats of restaurants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body id=0>
+    <div class="bg">
+        <section id="banner">
+            <div class="inner">
+                <h2>S E E &nbsp; S E A T S</h2>
+                <div class="buttons">
+                    <div class="container">
+                        <a href="#section2" class="btn effect04" data-sm-link-text="CLICK"><span>LET'S SEE</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="section2" class="sec2">
+        <div id="navbar" class="topnav">
+            <span style="font-size:30px; cursor:pointer; padding-left: 15px;" onclick="openNav()">&#9776;</span>
+            <input type="text" placeholder="Search.." id="s_name"><i class="fa fa-search" style="float:right;" onclick="search()"></i>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h1 class="type">Category</h1>
+            <a onclick="selectnewCateg('jpn')">japanese</a>
+            <a onclick="selectnewCateg('ita')">italian</a>
+            <a onclick="selectnewCateg('kor')">korean</a>
+            <a onclick="selectnewCateg('fas')">fast food</a>
+            <a onclick="selectnewCateg('tha')">thai</a>
+            <a onclick="selectnewCateg('chi')">chinese</a>
+            <a onclick="selectnewCateg('oth')">others</a>
+            <a onclick="selectnewCateg('all')">all</a>
+        </div>
+
+        <h1 class="floor" id=Fb_text>BF</h1>
+        <div class="floor" id="F_b">
+           
+        </div>
+
+        <h1 class="floor" id=F1_text>1F</h1>
+        <div class="floor" id="F_1">
+           
+        </div>
+
+        <h1 class="floor" id=F2_text>2F</h1>
+        <div class="floor" id="F_2">
+           
+        </div>
+
+        <h1 class="floor" id=F3_text>3F</h1>
+        <div class="floor" id="F_3">
+            
+        </div>
+
+        <h1 class="floor"  id=F4_text>4F</h1>
+        <div class="floor" id="F_4">
+            
+        </div>
+
+        <h1 class="floor"  id=F5_text>5F</h1>
+        <div class="floor" id="F_5">
+           
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "230px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+    <script src="manager.js"></script>
+</body>
+
+</html>
